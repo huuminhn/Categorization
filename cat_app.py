@@ -5,7 +5,7 @@ import components as comp
 st.set_page_config(layout = 'wide')
 
 # Create the side bar and uploader tool:
-sidebar_title = st.sidebar.title('Keywords Categorization Tool')
+sidebar_title = st.sidebar.title('Adgroup Categorization Tool')
 
 st.markdown('## **NOTE:** ##')
 st.write('In order for the tool to run smoothly, please put the columns name as: ')
