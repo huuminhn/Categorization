@@ -11,12 +11,14 @@ st.markdown('## **NOTE:** ##')
 st.write('In order for the tool to run smoothly, please put the columns name as: ')
 st.write('Keyword, Campaign ID, Adgroup ID, Campaign Name, Adgroup Name')
 
-upload = st.sidebar.file_uploader(label = '1. Upload your file here 📥', type = ['csv'])
+upload = st.sidebar.file_uploader(label = '1. Upload your CSV file here 📥', type = ['csv'])
 s = int(st.sidebar.number_input('2. Enter a number of keywords per Adgroup: '))
 
 st.sidebar.write('3. Wait a while for the program to run')
 
 st.sidebar.write('4. Please scroll down to the bottom of the page to download the file 📥')
+
+st.sidebar.write('5. Please contact Minh Nguyen if you ran into any problem, he will try his best to fix it ⚒')
 
 
 # Get the data:
