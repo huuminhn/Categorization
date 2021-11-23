@@ -55,5 +55,12 @@ st.write(cat_num)
 
 # Export the data:
 #export_file = comp.to_excel(categorized_data)
+# breakdown into two parts so the downloader can handle it:
+file_1 = categorized_data[0:int(len(categorized_data)/2)]
+file_2 = categorized_data[int(len(categorized_data)/2): len(categorized_data)]
 
-comp.csv_downloader(categorized_data)
+#comp.csv_downloader(categorized_data)
+
+comp.csv_downloader(file_1)
+
+comp.csv_downloader(file_2)
