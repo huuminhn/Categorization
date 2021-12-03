@@ -20,7 +20,7 @@ st.sidebar.write('4. Please scroll down to the bottom of the page to download th
 
 st.sidebar.write('5. Please contact Minh Nguyen if you ran into any problem, he will try his best to fix it ⚒')
 
-
+##### The Categorization part, from here:
 # Get the data:
 data = comp.file_uploading(upload)
 
@@ -47,6 +47,8 @@ for a,b in df:
     lyst.append(b)
 
 categorized_data = pd.concat(lyst) # This is the data we want
+
+##### To here, end of the main categorization part. 
 
 cat_num = categorized_data.groupby(['Campaign Name', 'Adgroup Name']).count().sort_values(['Keyword','Campaign Name','Adgroup Name'], ascending = False).reset_index()
 
